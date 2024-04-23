@@ -95,7 +95,11 @@ test('assertions', async ({ page }) => {
 })
 
 test('auto-waiting', async ({ page }) => {
+    await page.waitForLoadState('networkidle')
 })
 
 test('timeouts', async ({ page }) => {
+    test.setTimeout(10000)
+    const successButton = page.locator('.bg-success')
+    await successButton.click({timeout: 16000})
 })

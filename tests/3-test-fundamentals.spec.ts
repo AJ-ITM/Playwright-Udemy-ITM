@@ -15,10 +15,10 @@
 //Trace results in report: npx playwright test --trace on
 //Run tests on debug mode: npx playwright test --debug
 
-import { test, expect } from '@playwright/test'; 
+import { test, expect } from '@playwright/test';
 
 //Minimal test structure
-test('first test', async ({page}) => {
+test('first test', async ({ page }) => {
   //
 });
 
@@ -39,7 +39,7 @@ test.describe('test suite 1', () => {
 console.log('Before All Hook');
 
 //beforeEach
-test.beforeEach(async({page}) => {
+test.beforeEach(async ({ page }) => {
   await page.goto('https://playwright.dev/');
 });
 

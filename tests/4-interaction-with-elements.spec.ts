@@ -101,5 +101,5 @@ test('auto-waiting', async ({ page }) => {
 test('timeouts', async ({ page }) => {
     test.setTimeout(10000)
     const successButton = page.locator('.bg-success')
-    await successButton.click({timeout: 16000})
+    await successButton.click({ timeout: 16000 })
 })

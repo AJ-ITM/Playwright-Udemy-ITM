@@ -3,7 +3,8 @@
 //npm install -> instaluje pakiety, któe są w package.json
 //*.spec.ts -> file with tests
 //npm (Node Pangace Mangaer)
-//npx (Node Package Execute)
+//npx (Node Package Executor)
+//Generate tests from web from terminal: npx playwright codegen https://test.com
 //Run tests from CLI: npx playwright test
 //Run tests in UI mode: npx playwright test --ui
 //Run tests from browser: npx playwright test --project=chromiom
